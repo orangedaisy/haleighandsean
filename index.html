@@ -8,7 +8,7 @@
     <title>Haleigh and Sean are getting married!</title>
     <link href="https://fonts.googleapis.com/css?family=Spectral:300i&text=HaleighSn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i&text=&26" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300&text=June9th2018KnoxvilleTN%2C" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
     <style>
@@ -39,6 +39,18 @@
         display: -ms-flexbox;
         display: flex;
         padding: 1rem;
+      }
+
+      .countdown-banner {
+        background-color: #fbfbfb;
+        box-shadow: 0 0 32px 4px rgba(36, 103, 177, .35);
+        font-family: 'Libre Franklin', sans-serif;
+        padding: .5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
       }
 
       .announcement-card {
@@ -90,6 +102,12 @@
 
   <body translate="no" >
 
+    <div class="countdown-banner js-countdown">
+      <span class="js-countdown__days"></span> Days &middot;
+      <span class="js-countdown__hours"></span> Hours &middot;
+      <span class="js-countdown__minutes"></span> Minutes
+    </div>
+
     <div class="announcement-card">
       <div class="announcement-card__image">
         <img src="haleigh_and_sean.jpg" alt="Haleigh and Sean">
@@ -100,5 +118,7 @@
       </div>
     </div>
 
+
+    <script src="assets/javascripts/scripts.js"></script>
   </body>
 </html>
