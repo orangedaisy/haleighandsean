@@ -1,106 +1,12 @@
+---
+# Haleigh and Sean are getting married! :)
+---
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="noindex">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Haleigh and Sean are getting married!</title>
-    <link href="https://fonts.googleapis.com/css?family=Spectral:300i&text=HaleighSn" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i&text=&26" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  {% include head.html %}
 
-    <style>
-      html {
-        background-color: #e7f0fd;
-        background-image:
-          linear-gradient(
-            to bottom left,
-            #e7f0fd,
-            #accbee
-          );
-        box-sizing: border-box;
-      }
-
-      *,
-      *::before,
-      *::after {
-        box-sizing: inherit;
-      }
-
-      html,
-      body {
-        height: 100%;
-      }
-
-      body {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        padding: 1rem;
-      }
-
-      .countdown-banner {
-        background-color: #fbfbfb;
-        box-shadow: 0 0 32px 4px rgba(36, 103, 177, .35);
-        font-family: 'Libre Franklin', sans-serif;
-        padding: .5rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        text-align: center;
-      }
-
-      .announcement-card {
-        background-color: #fdfbfb;
-        border-radius: 4px;
-        box-shadow: 0 0 32px 4px rgba(36, 103, 177, .35);
-        margin: auto;
-        max-width: 48rem;
-        max-height: 95vh;
-      }
-
-      .announcement-card__image img {
-        border-radius: 4px 4px 0 0;
-        display: block;
-        max-height: 50vh;
-        max-width: 100%;
-      }
-
-      .announcement-card__text {
-        line-height: 1.5;
-        padding: 0 1rem;
-        text-align: center;
-      }
-
-      .ampersand {
-        font-family: 'Playfair Display', serif;
-        font-style: italic;
-      }
-
-      .announcement-card__text h1 {
-        font-family: 'Spectral', serif;
-        font-size: calc(1.5vw + 1.5rem);
-        font-style: italic;
-        font-weight: 300;
-        letter-spacing: .063rem;
-        margin: calc(1vh + 1rem) auto;
-        opacity: .75;
-      }
-
-      .announcement-card__text h2 {
-        font-family: 'Libre Franklin', sans-serif;
-        font-size: calc(.75vw + .75rem);
-        font-weight: 300;
-        margin: 0 auto calc(1vh + 1rem);
-        opacity: .75;
-      }
-    </style>
-  </head>
-
-  <body translate="no" >
+  <body translate="no">
 
     <div class="countdown-banner js-countdown">
       <span class="js-countdown__days"></span> Days &middot;
