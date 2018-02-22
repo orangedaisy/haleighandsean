@@ -1,0 +1,32 @@
+html {
+  background-color: #f8f8ff;
+  box-sizing: border-box;
+  color: #13138d;
+  font-family: 'Sorts Mill Goudy', serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: 400;
+  }
+}
+
+.lead {
+  font-size: 1.125em;
+}
+
+.text-subdued {
+  opacity: .75;
+}
