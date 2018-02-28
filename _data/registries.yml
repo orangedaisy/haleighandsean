@@ -1,0 +1,6 @@
+- name: "Target"
+  logo: target_logo.svg
+  link: "https://www.target.com/gift-registry/registry/45a509ab01f84480818a7be1859baf16"
+- name: "Kohl's"
+  logo: kohls_logo.svg
+  link: "https://www.kohls.com/upgrade/gift_registry/kohlsgrw_home.jsp?section=list&listid=3381282&viewtype=listview&isfromsearch=true&regtype=registry.wedding,registry.baby,registry.splday&regno=3381282"

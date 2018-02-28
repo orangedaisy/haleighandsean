@@ -1,0 +1,29 @@
+<div id="wedding">
+
+  <div>
+    {% capture map-link %}
+    {{ site.data.wedding.map-link }}
+    {% endcapture %}
+
+    {% include map.html link=map-link %}
+
+    <h2>Wedding</h2>
+    <p>{{ site.data.wedding.time }}</p>
+    <h3>{{ site.data.wedding.venue-name }}</h3>
+    <p>{{ site.data.wedding.venue-address }}</p>
+  </div>
+
+  <div>
+    {% capture map-link %}
+    {{ site.data.reception.map-link }}
+    {% endcapture %}
+
+    {% include map.html link=map-link %}
+
+    <h2>Reception</h2>
+    <p>{{ site.data.reception.time }}</p>
+    <h3>{{ site.data.reception.venue-name }}</h3>
+    <p>{{ site.data.reception.venue-address }}</p>
+  </div>
+
+</div>

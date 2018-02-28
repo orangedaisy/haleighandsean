@@ -1,0 +1,14 @@
+<div id="registry">
+
+  <h2>Registry</h2>
+
+  <div>
+    {% for registry in site.data.registries %}
+    <a href="{{ registry.link }}" title="{{ registry.name }}">
+      <img src="assets/images/{{ registry.logo }}" alt="{{ registry.name }}">
+    </a>
+    {% endfor %}
+  </div>
+
+</div>
+

@@ -1,0 +1,7 @@
+<div id="gallery">
+
+  {% for image in site.data.gallery %}
+    <img src="assets/images/{{ image.file }}" alt="{{ image.alt }}">
+  {% endfor %}
+
+</div>
