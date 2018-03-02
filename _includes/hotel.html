@@ -1,4 +1,6 @@
-<div id="hotel">
+<div id="hotel" class="hotel">
+
+  <h1 class="text-center text-heading">Hotel Accommodations</h1>
 
   <div>
     {% capture map-link %}
@@ -7,7 +9,6 @@
 
     {% include map.html link=map-link %}
 
-    <h2>Hotel Accommodations</h2>
     <h3>{{ site.data.hotel.venue-name }}</h3>
     <p>{{ site.data.hotel.venue-address }}</p>
   </div>

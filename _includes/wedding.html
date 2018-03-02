@@ -1,29 +1,31 @@
-<div id="wedding">
+<div id="wedding" class="wedding">
 
-  <div>
-    {% capture map-link %}
-    {{ site.data.wedding.map-link }}
-    {% endcapture %}
+  <h1 class="text-center text-heading">Wedding Details</h1>
 
-    {% include map.html link=map-link %}
+  <div class="flex-row">
+    <div class="wedding__ceremony">
+      {% capture map-link %}
+      {{ site.data.wedding.map-link }}
+      {% endcapture %}
 
-    <h2>Wedding</h2>
-    <p>{{ site.data.wedding.time }}</p>
-    <h3>{{ site.data.wedding.venue-name }}</h3>
-    <p>{{ site.data.wedding.venue-address }}</p>
-  </div>
+      {% include map.html link=map-link %}
 
-  <div>
-    {% capture map-link %}
-    {{ site.data.reception.map-link }}
-    {% endcapture %}
+      <h2>Ceremony</h2>
+      <h3>{{ site.data.wedding.venue-name }}</h3>
+      <p>{{ site.data.wedding.venue-address }}</p>
+    </div>
 
-    {% include map.html link=map-link %}
+    <div class="wedding__reception">
+      {% capture map-link %}
+      {{ site.data.reception.map-link }}
+      {% endcapture %}
 
-    <h2>Reception</h2>
-    <p>{{ site.data.reception.time }}</p>
-    <h3>{{ site.data.reception.venue-name }}</h3>
-    <p>{{ site.data.reception.venue-address }}</p>
+      {% include map.html link=map-link %}
+
+      <h2>Reception</h2>
+      <h3>{{ site.data.reception.venue-name }}</h3>
+      <p>{{ site.data.reception.venue-address }}</p>
+    </div>
   </div>
 
 </div>

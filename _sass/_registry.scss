@@ -1,0 +1,28 @@
+.registry {
+  background-color: $c-blue;
+  color: $c-silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 25vh;
+  padding: 2rem 1rem;
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    display: block;
+    margin: 1rem 2.25rem;
+    max-width: 14rem;
+    padding: 1rem;
+  }
+
+  .target {
+    max-height: 7rem;
+    width: auto;
+  }
+}

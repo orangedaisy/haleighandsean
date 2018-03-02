@@ -1,0 +1,37 @@
+.story {
+  background-color: $c-blue;
+  color: $c-silver;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+
+  &__wrapper {
+    max-width: 75ch;
+  }
+
+  h1 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto 1fr;
+    grid-column: 2 / 3;
+    grid-column-gap: .5em;
+
+    &::before,
+    &::after {
+      background-color: $c-silver;
+      content: '';
+      height: .063em;
+    }
+
+    &::before {
+      grid-column: 1 / 2;
+    }
+
+    &::after {
+      grid-column: 3 / 4;
+    }
+  }
+}

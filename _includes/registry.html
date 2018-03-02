@@ -1,11 +1,17 @@
-<div id="registry">
+<div id="registry" class="registry">
 
-  <h2>Registry</h2>
+  <h1 class="text-center text-heading">Registry</h1>
+
+  <p>
+    We love you all deeply, and are so blessed that you want to honor us with
+    gifts to start our new life together. You can view our registries by
+    clicking on each of the store logos below:
+  </p>
 
   <div>
     {% for registry in site.data.registries %}
     <a href="{{ registry.link }}" title="{{ registry.name }}">
-      <img src="assets/images/{{ registry.logo }}" alt="{{ registry.name }}">
+      <img src="assets/images/{{ registry.logo }}" alt="{{ registry.name }}" class="{{ registry.class }}">
     </a>
     {% endfor %}
   </div>

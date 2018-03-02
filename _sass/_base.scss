@@ -1,8 +1,9 @@
 html {
-  background-color: #f8f8ff;
+  background-color: $c-silver;
   box-sizing: border-box;
-  color: #13138d;
-  font-family: 'Sorts Mill Goudy', serif;
+  color: $c-blue;
+  font-family: $f-serif;
+  font-size: calc(16px + .5vw);
   line-height: 1.5;
 }
 
@@ -20,13 +21,51 @@ body {
 @for $i from 1 through 6 {
   h#{$i} {
     font-weight: 400;
+    margin-top: 0;
+    margin-bottom: .5em;
   }
 }
 
-.lead {
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.text-lead {
   font-size: 1.125em;
 }
 
 .text-subdued {
   opacity: .75;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-heading {
+  font-style: italic;
+}
+
+.flex-map {
+  margin: 1rem 0;
+  padding-bottom: 75%;
+  position: relative;
+
+  iframe {
+    border-radius: .25em;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
 }

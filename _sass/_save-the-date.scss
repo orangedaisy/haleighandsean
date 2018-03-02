@@ -1,0 +1,62 @@
+.save-the-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: center;
+
+  @media screen and (min-width: 40rem) {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 100%;
+    padding: 0;
+  }
+}
+
+.save-the-date__info {
+  @media screen and (min-width: 40rem) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1;
+    padding: 1rem;
+  }
+}
+
+.save-the-date__image {
+  position: relative;
+
+  &::after {
+    background-image:
+      linear-gradient(
+        to top,
+        rgba(#13138d, .15),
+        rgba(#13138d, .10)
+      );
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media screen and (min-width: 40rem) {
+    grid-column: 2;
+  }
+
+  img {
+    @media screen and (min-width: 40rem) {
+      height: 100%;
+      object-fit: cover;
+      object-position: 70%;
+      max-width: 100%;
+    }
+
+    @media screen and (min-width: 80rem) {
+      object-position: right;
+    }
+  }
+}
