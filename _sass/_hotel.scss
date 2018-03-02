@@ -6,4 +6,18 @@
   max-width: 28rem;
   min-height: 50vh;
   padding: 2rem 1rem;
+
+  &__note {
+    background-color: rgba($c-blue, .1);
+    border-radius: .25em;
+    padding: 1rem;
+
+    > *:first-child {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

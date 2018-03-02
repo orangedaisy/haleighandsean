@@ -11,6 +11,23 @@
 
     <h3>{{ site.data.hotel.venue-name }}</h3>
     <p>{{ site.data.hotel.venue-address }}</p>
+    <p>
+      <a href="{{ site.data.hotel.normal-reservation-link }}" title="Reserve a room at Embassy Suites" class="text-link">
+        Make a reservation &rarr;
+      </a>
+    </p>
+
+    {% if site.data.hotel.special-rate == 'active' %}
+      <div class="hotel__note">
+        <p class="text-note">
+          <span class="text-small-caps">Note:</span>
+          We have worked with Embassy Suites to secure a small number of rooms
+          at a special rate. Please talk with Haleigh or Sean to
+          <a href="{{ site.data.hotel.special-reservation-link }}" title="Reserve a special-rate room at Embassy Suites" class="text-link">
+            make a special rate reservation</a>.
+        </p>
+      </div>
+    {% endif %}
   </div>
 
 </div>

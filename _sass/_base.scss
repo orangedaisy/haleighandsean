@@ -53,6 +53,35 @@ img {
   font-style: italic;
 }
 
+.text-link {
+  color: $c-blue;
+  font-style: italic;
+  transition: color 150ms ease-out;
+
+  &:hover,
+  &:focus {
+    color: rgba($c-blue, .6);
+  }
+
+  &:active {
+    color: mix(black, $c-blue);
+  }
+
+  &:visited {
+    color: $c-blue;
+  }
+}
+
+.text-note {
+  font-size: .85em;
+}
+
+.text-small-caps {
+  font-size: .85em;
+  letter-spacing: .063em;
+  text-transform: uppercase;
+}
+
 .flex-map {
   margin: 1rem 0;
   padding-bottom: 75%;
